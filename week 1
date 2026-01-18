@@ -1,0 +1,62 @@
+//Factorial
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Factorial = " + factorial(5));
+    }
+
+    public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+
+//to check even or odd
+
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println(num + " is Even.");
+        } else {
+            System.out.println(num + " is Odd.");
+        }
+
+        sc.close();
+    }
+}
+
+//create two car objects and print their details.
+
+class Car {
+    String brand;
+    String model;
+    double price;
+
+    Car(String b, String m, double p) {
+        brand = b;
+        model = m;
+        price = p;
+    }
+
+    void displayDetails() {
+        System.out.println("Brand: " + brand + ", Model: " + model + ", Price: $" + price);
+    }
+}
+
+public class code1 {
+    public static void main(String[] args) {
+        Car c1 = new Car("Toyota", "Corolla", 28000);
+        Car c2 = new Car("Honda", "Civic", 31000);
+        c1.displayDetails();
+        c2.displayDetails();
+    }
+}
