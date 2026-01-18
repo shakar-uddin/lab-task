@@ -1,0 +1,64 @@
+/*class MyArray {
+    private int[] items;
+    private int count;
+
+    public MyArray(int length) {
+        items = new int[length];
+    }
+
+    public void insert(int value) {
+        if (count == items.length) {
+            System.out.println("Array is full! Cannot insert " + value);
+            return;
+        }
+        items[count++] = value;
+    }
+
+    public void print() {
+        for (int i = 0; i < count; i++)
+            System.out.print(items[i] + " ");
+        System.out.println();
+    }
+}
+
+public class code2 {
+    public static void main(String[] args) {
+        MyArray numbers = new MyArray(3);
+        numbers.insert(10);
+        numbers.insert(20);
+        numbers.insert(30);
+        numbers.insert(40); // full
+        numbers.print();
+    }
+}
+import java.util.Scanner;
+
+public class code2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter element " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+
+        int sum = 0, max = arr[0], index = 0;
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
+            if (arr[i] > max) {
+                max = arr[i];
+                index = i;
+            }
+        }
+
+        double avg = (double) sum / n;
+        System.out.println("Sum = " + sum);
+        System.out.println("Average = " + avg);
+        System.out.println("Max = " + max + " at index " + index);
+        System.out.println("Time Complexity: O(n)");
+        System.out.println("Space Complexity: O(n)");
+    }
+}*/
