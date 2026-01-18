@@ -1,0 +1,78 @@
+/*class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+public class code3 {
+    public static void main(String[] args) {
+        Node first = new Node(10);
+        Node second = new Node(20);
+        Node third = new Node(30);
+
+        first.next = second;
+        second.next = third;
+
+        System.out.print("Linked List: ");
+        System.out.print(first.data + " -> ");
+        System.out.print(first.next.data + " -> ");
+        System.out.print(first.next.next.data + " -> null");
+    }
+}
+
+class LL {
+
+
+   Node head;
+   private int size;
+
+
+   LL () {
+       size = 0;
+   }
+
+//Node class with size  
+   public class Node {
+       String data;
+       Node next;
+
+
+       Node(String data) {
+           this.data = data;
+           this.next = null;
+           size++;
+       }
+   }
+
+
+//delete
+import java.util.*;
+
+public class DeleteGreaterThan25 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinkedList<Integer> list = new LinkedList<>();
+
+        System.out.print("Enter size of list: ");
+        int size = sc.nextInt();
+
+        System.out.println("Enter " + size + " elements (1–50):");
+        for (int i = 0; i < size; i++) {
+            int num = sc.nextInt();
+            list.add(num);
+        }
+
+        System.out.println("\nOriginal List: " + list);
+
+        // Remove numbers greater than 25
+        list.removeIf(n -> n > 25);
+
+        System.out.println("Updated List (after deleting >25): " + list);
+    }
+}
+
+*/
