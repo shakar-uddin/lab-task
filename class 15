@@ -1,0 +1,55 @@
+/*import java.util.*;
+
+public class HashMapDemo {
+    public static void main(String[] args) {
+
+        Map<Integer, String> map = new HashMap<>();
+
+        map.put(1, "Ali");
+        map.put(2, "Hamza");
+        map.put(3, "Sara");
+        map.put(4, "Ahmed");
+
+        map.put(2, "Hammad");
+
+        System.out.println("Value at key 1: " + map.get(1));
+        System.out.println("Value at key 5: " + map.get(5));
+
+        map.remove(4);
+        System.out.println("After removing key 4: " + map);
+
+        System.out.println("Contains key 2? " + map.containsKey(2));
+        System.out.println("Contains key 4? " + map.containsKey(4));
+
+        System.out.println("Size of map: " + map.size());
+        System.out.println("Is map empty? " + map.isEmpty());
+
+        System.out.println("\nKeys:");
+        for (Integer key : map.keySet()) {
+            System.out.println(key);
+        }
+
+        System.out.println("\nValues:");
+        for (String value : map.values()) {
+            System.out.println(value);
+        }
+
+        System.out.println("\nKey → Value pairs:");
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " → " + entry.getValue());
+        }
+
+        String[] words = {"apple", "banana", "apple", "orange", "banana", "apple"};
+        Map<String, Integer> frequencyMap = new HashMap<>();
+
+        for (String word : words) {
+            frequencyMap.put(word, frequencyMap.getOrDefault(word, 0) + 1);
+        }
+
+        System.out.println("\nWord Frequencies:");
+        for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
+            System.out.println(entry.getKey() + " → " + entry.getValue());
+        }
+    }
+}
+*/
