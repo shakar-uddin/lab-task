@@ -1,0 +1,124 @@
+/*public class code10 {
+
+    public static int linearSearch(int[] arr, int target) {
+
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == target) {
+                return i;   
+            }
+        }
+        return -1;  
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {5, 12, 9, 21, 3};
+        int index = linearSearch(arr, 21);
+
+        System.out.println(index == -1 ? "Not Found" : "Found at index: " + index);
+    }
+}
+//iterative
+
+public static int binarySearchIterative(int[] arr, int target) {
+
+    int low = 0, high = arr.length - 1;
+
+    while(low <= high) {
+
+        int mid = (low + high) / 2;
+
+        if(arr[mid] == target) return mid;
+
+        else if(target > arr[mid])
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+
+    return -1;
+}
+
+//Factorial
+class FactorialRecursion {
+    static int factorial(int n) {
+        if(n == 0) {
+            return 1;  // base case
+        }
+        return n * factorial(n - 1); // recursive call
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        System.out.println("Factorial of " + num + " = " + factorial(num));
+    }
+}
+//fabonacci
+
+class FibonacciRecursion {
+    static int fib(int n) {
+        if(n <= 1) {
+            return n; // base cases 0 and 1
+        }
+        return fib(n - 1) + fib(n - 2); // recursive relation
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.print("Fibonacci Series: ");
+        for(int i = 0; i < n; i++) {
+            System.out.print(fib(i) + " ");
+        }
+    }
+}
+//Recursive Linear Search
+
+public class LinearSearchRecursive {
+
+    // Recursive function
+    public static int linearSearchRec(int[] arr, int target, int index) {
+
+        // base case: index out of range
+        if(index == arr.length) {
+            return -1;   // not found
+        }
+
+        // check current element
+        if(arr[index] == target) {
+            return index;
+        }
+
+        // recursive call for next index
+        return linearSearchRec(arr, target, index + 1);
+    }
+
+    // Main function
+    public static void main(String[] args) {
+
+        int[] arr = {5, 12, 7, 25, 3};
+        int target = 25;
+
+        int result = linearSearchRec(arr, target, 0);
+
+        if(result == -1)
+            System.out.println("Element not found");
+        else
+            System.out.println("Found at index: " + result);
+    }
+}
+
+//binary search (recursive)
+public static int binarySearchRecursive(int[] arr, int low, int high, int target) {
+
+    if(low > high) return -1;
+
+    int mid = (low + high) / 2;
+
+    if(arr[mid] == target) return mid;
+
+    if(target < arr[mid])
+        return binarySearchRecursive(arr, low, mid - 1, target);
+
+    return binarySearchRecursive(arr, mid + 1, high, target);
+}
+
+*/
